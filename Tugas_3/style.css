@@ -1,0 +1,102 @@
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+}
+
+/* HEADER */
+#search {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1610809376778-928ee2c3a561?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+/* CAR LIST */
+.car-list {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.car-item {
+    background: white;
+    border-radius: 12px;
+    width: 240px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.car-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.car-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.car-item h3 {
+    margin: 10px 0 5px;
+}
+
+.car-item p {
+    margin: 3px 0;
+}
+
+.car-item b {
+    color: #ff5722;
+}
+
+.car-item button {
+    width: 90%;
+    margin: 10px auto 15px;
+    display: block;
+}
