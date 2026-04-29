@@ -1,0 +1,92 @@
+/*  TUGAS 1 MODERN  */
+
+/* BODY (samakan gaya biar konsisten) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    text-align: center;
+}
+
+/* WRAPPER */
+.wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/*  LIST  */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li {
+    background-color: #fff;
+    width: 60%;
+    margin: 8px 0;
+    padding: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+ul li:hover {
+    transform: translateY(-3px);
+}
+
+/*  TABLE  */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    border: 1px solid #eee;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+
+.container-tugas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+
+.box {
+    width: 140px;
+    padding: 20px;
+
+    background-color: #f59ab3;
+    color: white;
+
+    border-radius: 12px;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.box:hover {
+    background-color: #e87b9a;
+    transform: translateY(-5px);
+}
