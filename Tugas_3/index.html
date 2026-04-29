@@ -10,81 +10,196 @@
 
 <body>
 
-    <!-- HEADER -->
-    <div id="search">
-        <h1>🚗 Car Rental</h1>
-        <p>Find the perfect car for your next adventure</p>
-        <hr>
+/*NAVBAR */
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">Tentang Kami</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <div class="form-container">
-            <div class="form-group">
-                <label>Rental Location:</label>
-                <select>
-                    <option>Select Location</option>
-                    <option>Yogyakarta</option>
-                    <option>Bali</option>
-                    <option>Jakarta</option>
-                </select>
-            </div>
+/* HEADER */
+<div id="search">
+    <h1>🚗 Car Rental</h1>
+    <p>Find the perfect car for your next adventure</p>
+    <hr>
 
-            <div class="form-group">
-                <label>Start Date:</label>
-                <input type="date">
-            </div>
+    <div class="form-container">
+        <div class="form-group">
+            <label>Rental Location:</label>
+            <select>
+                <option>Select Location</option>
+                <option>Yogyakarta</option>
+                <option>Bali</option>
+                <option>Jakarta</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label>End Date:</label>
-                <input type="date">
-            </div>
+        <div class="form-group">
+            <label>Start Date:</label>
+            <input type="date">
+        </div>
 
-            <div class="form-group">
-                <label style="visibility:hidden;">Search</label>
-                <!-- FIX: tambah class -->
-                <button class="search-btn">Search</button>
-            </div>
+        <div class="form-group">
+            <label>End Date:</label>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label style="visibility:hidden;">Search</label>
+            <button class="search-btn">Search</button>
         </div>
     </div>
+</div>
+/* ABOUT */
+<div id="about">
+    <h2>🏢 Prima Rent Car</h2>
+    <p><b>Prima Rent Car</b> Jasa kami Prima Rent Car adalah jasa rental mobil terpercaya yang menyediakan berbagai pilihan kendaraan mulai dari mobil keluarga, city car, hingga mobil premium dan luxury. Kami berkomitmen memberikan pelayanan terbaik dengan armada yang selalu dalam kondisi bersih, terawat, dan siap digunakan untuk perjalanan harian, wisata, maupun kebutuhan bisnis.
 
-    <!-- LIST MOBIL -->
-    <div class="car-list">
-        <h2>Available Cars</h2>
+Dengan harga yang terjangkau dan sistem pemesanan yang mudah, Prima Rent Car menjadi solusi tepat bagi Anda yang membutuhkan transportasi nyaman dan aman. Kami juga menyediakan layanan antar-jemput kendaraan, serta fleksibilitas waktu sewa sesuai kebutuhan pelanggan.
 
-        <div class="car-container">
+Berlokasi di Yogyakarta dan Bali, kami siap melayani pelanggan dari berbagai daerah dengan pelayanan cepat, ramah, dan profesional untuk memastikan perjalanan Anda menjadi lebih nyaman dan berkesan.</p>
 
-            <div class="car-item">
-                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80">
-                <h3>Toyota Avanza</h3>
-                <p>7 Seats • Manual • AC</p>
-                <p><b>Rp 350.000/day</b></p>
-                <button class="rent-btn">Rent Now</button>
-            </div>
+    <p>📍 Jogja: Yogyakarta (Area Kota & Sekitar Kampus)</p>
+    <p>📍 Bali: Denpasar, Bali</p>
+</div>
 
-            <div class="car-item">
-                <img src="https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&w=600&q=80">
-                <h3>Honda Brio</h3>
-                <p>5 Seats • Automatic • AC</p>
-                <p><b>Rp 300.000/day</b></p>
-                <button class="rent-btn">Rent Now</button>
-            </div>
+/*list mobil*/
+<div id="cars" class="car-list">
+    <h2>🚘 Available Cars</h2>
 
-            <div class="car-item">
-                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=600&q=80">
-                <h3>Toyota Fortuner</h3>
-                <p>7 Seats • Automatic • Premium</p>
-                <p><b>Rp 800.000/day</b></p>
-                <button class="rent-btn">Rent Now</button>
-            </div>
+    <div class="car-container">
 
-            <div class="car-item">
-                <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=600&q=80">
-                <h3>BMW Series 3</h3>
-                <p>5 Seats • Automatic • Luxury</p>
-                <p><b>Rp 1.200.000/day</b></p>
-                <button class="rent-btn">Rent Now</button>
-            </div>
-
+        <!-- 1 -->
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
+            <h3>Toyota Avanza</h3>
+            <p>Family Car</p>
+            <p><b>Rp 350.000/day</b></p>
+            <a class="wa-btn" href="https://wa.me/6281238169376?text=Halo%20saya%20ingin%20booking%20Toyota%20Avanza" target="_blank">📲 Booking WA</a>
         </div>
+
+        <!-- 2 -->
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1583267746897-2cf415887172">
+            <h3>Honda Brio</h3>
+            <p>City Car</p>
+            <p><b>Rp 300.000/day</b></p>
+            <a class="wa-btn" href="https://wa.me/6281238169376?text=Halo%20saya%20ingin%20booking%20Honda%20Brio" target="_blank">📲 Booking WA</a>
+        </div>
+
+        <!-- 3 -->
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+            <h3>Toyota Fortuner</h3>
+            <p>Premium SUV</p>
+            <p><b>Rp 800.000/day</b></p>
+            <a class="wa-btn" href="https://wa.me/6281238169376?text=Halo%20saya%20ingin%20booking%20Fortuner" target="_blank">📲 Booking WA</a>
+        </div>
+
+        <!-- 4 -->
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a">
+            <h3>BMW Series 3</h3>
+            <p>Luxury</p>
+            <p><b>Rp 1.200.000/day</b></p>
+            <a class="wa-btn" href="https://wa.me/6281238169376?text=Halo%20saya%20ingin%20booking%20BMW" target="_blank">📲 Booking WA</a>
+        </div>
+
+        <!-- 5 -->
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+            <h3>Mercedes C-Class</h3>
+            <p>Luxury Sedan</p>
+            <p><b>Rp 1.500.000/day</b></p>
+            <a class="wa-btn" href="https://wa.me/6281238169376?text=Halo%20saya%20ingin%20booking%20Mercedes" target="_blank">📲 Booking WA</a>
+        </div>
+
+        <!-- 6 -->
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
+            <h3>Jeep Wrangler</h3>
+            <p>Adventure</p>
+            <p><b>Rp 1.000.000/day</b></p>
+            <a class="wa-btn" href="https://wa.me/6281238169376?text=Halo%20saya%20ingin%20booking%20Jeep" target="_blank">📲 Booking WA</a>
+        </div>
+
+        <!-- 7 -->
+        <div class="car-item">
+            <img src="https://asset.kompas.com/crops/A9QL8OWph0hhSHPOsF4j71Zjkt4=/0x34:1024x717/1200x800/data/photo/2022/12/21/63a27ce728def.jpg">
+            <h3>Mitsubishi Pajero</h3>
+            <p>SUV</p>
+            <p><b>Rp 900.000/day</b></p>
+            <a class="wa-btn" href="https://wa.me/6281238169376?text=Halo%20saya%20ingin%20booking%20Pajero" target="_blank">📲 Booking WA</a>
+        </div>
+
+        <!-- 8 -->
+        <div class="car-item">
+            <img src="https://imgcdn.oto.com/large/gallery/exterior/38/1240/toyota-kijang-innova-front-angle-low-view-351782.jpg">
+            <h3>Toyota Innova</h3>
+            <p>Family Car</p>
+            <p><b>Rp 450.000/day</b></p>
+            <a class="wa-btn" href="https://wa.me/6281238169376?text=Halo%20saya%20ingin%20booking%20Innova" target="_blank">📲 Booking WA</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- TOUR -->
+<div id="tour" class="car-list">
+    <h2>🌴 Tour Packages Jogja & Bali</h2>
+
+    <div class="car-container">
+
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada">
+            <h3>Jogja Heritage</h3>
+            <p>Malioboro • Prambanan</p>
+            <p><b>Rp 1.500.000</b></p>
+        </div>
+
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5">
+            <h3>Jogja Nature</h3>
+            <p>Gunung Kidul</p>
+            <p><b>Rp 1.800.000</b></p>
+        </div>
+
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+            <h3>Bali Beach</h3>
+            <p>Kuta • Uluwatu</p>
+            <p><b>Rp 2.500.000</b></p>
+        </div>
+
+        <div class="car-item">
+            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2">
+            <h3>Bali Ubud</h3>
+            <p>Culture • Rice Terrace</p>
+            <p><b>Rp 2.800.000</b></p>
+        </div>
+
+    </div>
+</div>
+
+/* CONTACT */
+<div id="contact" class="contact-section">
+    <h2>📞 Contact Us</h2>
+    <p>Silakan hubungi kami untuk pemesanan, pertanyaan, atau konsultasi rental mobil dan paket tour.</p>
+
+    <div class="contact-box">
+        <p><b>🏢 Nama Usaha:</b> Prima Rent Car</p>
+        <p><b>📱 WhatsApp Admin:</b> 
+            <a href="https://wa.me/6281238169376" target="_blank">
+                081238169376 (Klik untuk chat)
+            </a>
+        </p>
+        <p><b>📸 Instagram:</b> @primarentcar</p>
+        <p><b>📍 Lokasi:</b> Yogyakarta & Bali</p>
     </div>
 
+    <p class="note">
+        Kami siap melayani 24 jam untuk kebutuhan rental mobil, wisata, dan perjalanan Anda.
+    </p>
+</div>
 </body>
 </html>
