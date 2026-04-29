@@ -1,11 +1,10 @@
-/* BODY */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f4f6f8;
 }
 
-/* HEADER */
+/* header*/
 #search {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("https://images.unsplash.com/photo-1610809376778-928ee2c3a561?auto=format&fit=crop&w=1600&q=80");
@@ -15,6 +14,7 @@ body {
     padding: 60px 20px;
     text-align: center;
 }
+
 
 .form-container {
     display: flex;
@@ -35,6 +35,7 @@ input, select {
     border: none;
 }
 
+/* tombol search  */
 button {
     padding: 10px 20px;
     background-color: #e67e22;
@@ -49,20 +50,22 @@ button:hover {
     background-color: #d35400;
 }
 
-/* CAR LIST */
+/* list mobil */
 .car-list {
     padding: 40px 20px;
     text-align: center;
 }
 
+
 .car-container {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 25px;
     flex-wrap: wrap;
 }
 
-/* CARD */
+/* mobil */
 .car-item {
     background: white;
     border-radius: 12px;
@@ -70,6 +73,9 @@ button:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: 0.3s;
+
+    /* biar isi rata */
+    text-align: center;
 }
 
 .car-item:hover {
@@ -95,8 +101,49 @@ button:hover {
     color: #ff5722;
 }
 
+/* RENT BUTTON  */
 .car-item button {
     width: 90%;
-    margin: 10px auto 15px;
+    margin: 10px auto 10px;
     display: block;
+}
+
+/*  CONTACT */
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-box {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
+
+    background: #f4f6f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    text-align: left;
+}
+
+.contact-box p {
+    margin: 8px 0;
+    color: #333;
+}
+
+.contact-box a {
+    color: #25D366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.note {
+    margin-top: 15px;
+    color: #666;
+    font-style: italic;
 }
