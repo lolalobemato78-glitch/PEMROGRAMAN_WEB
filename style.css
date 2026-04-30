@@ -1,14 +1,15 @@
-/* --- VARIABEL WARNA MODERN --- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+/* --- VARIABEL WARNA --- */
 :root {
-    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --accent-pink: #ff758c;
-    --dark-blue: #1a202c;
-    --text-main: #2d3748;
-    --text-muted: #718096;
-    --light-bg: #f7fafc;
+    --primary-color: #6366f1; /* Indigo modern */
+    --secondary-color: #a855f7; /* Purple */
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-soft: #f8fafc;
     --white: #ffffff;
-    --card-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    --border-radius: 16px;
 }
 
 /* --- RESET DASAR --- */
@@ -16,277 +17,192 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-    background-color: var(--light-bg);
-    color: var(--text-main);
-    line-height: 1.7;
-    overflow-x: hidden;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-/* --- HEADER & NAVIGASI --- */
-.header {
-    background: pink;
-    backdrop-filter: blur(12px);
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.nav-wrapper {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-soft);
+    color: var(--text-dark);
+    line-height: 1.6;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    padding: 40px 20px;
 }
 
-.logo {
+/* --- JUDUL UTAMA --- */
+h1 {
+    font-size: 2.5rem;
     font-weight: 800;
-    font-size: 24px;
-    background: var(--primary-gradient);
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-decoration: none;
-    letter-spacing: -0.5px;
-}
-
-.navbar {
-    display: flex;
-    gap: 10px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: var(--text-muted);
-    padding: 8px 16px;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 8px;
-    transition: var(--transition);
-}
-
-.navbar a:hover {
-    color: var(--dark-blue);
-    background: rgba(0,0,0,0.04);
-}
-
-/* --- HERO SECTION --- */
-/* Fokus pada Nama dan Jurusan Anda */
-.hero {
-    padding: 100px 0 60px;
-    text-align: center;
-    background: radial-gradient(circle at top right, #fff5f7 0%, transparent 40%),
-                radial-gradient(circle at bottom left, #f0f4ff 0%, transparent 40%);
-}
-
-.hero h1 {
-    font-size: 52px;
-    font-weight: 800;
-    color: var(--dark-blue);
-    margin-bottom: 8px;
-    letter-spacing: -2px;
-}
-
-.hero .prodi {
-    font-size: 16px;
-    color: var(--accent-pink);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-    display: block;
-}
-
-/* Search form sebagai pemanis sesuai struktur Soal ASN */
-.search-container {
-    max-width: 550px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.search-container input {
-    width: 100%;
-    padding: 18px 30px;
-    border-radius: 20px;
-    border: 1px solid rgba(0,0,0,0.08);
-    outline: none;
-    box-shadow: var(--card-shadow);
-    font-size: 16px;
-    transition: var(--transition);
-}
-
-.search-container input:focus {
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
-    border-color: #667eea;
-}
-
-/* --- MAIN CONTENT (CARD KUTIPAN) --- */
-/* Fokus pada Teks "Hari ini Yah Hari ini" dan Gambar Kutipan */
-.main-content {
-    padding: 60px 0;
-}
-
-.card {
-    background: var(--white);
-    border-radius: 32px;
-    overflow: hidden;
-    box-shadow: var(--card-shadow);
-    max-width: 600px;
-    margin: 0 auto;
-    transition: var(--transition);
-    border: 1px solid rgba(255, 255, 255, 0.7);
-}
-
-.card:hover {
-    transform: translateY(-12px) scale(1.01);
-    box-shadow: 0 30px 60px -12px rgba(0,0,0,0.15);
-}
-
-.card-header {
-    padding: 24px;
-    background: #fdfdfd;
     text-align: center;
 }
 
-.card-header p {
-    font-weight: 700;
-    color: var(--text-main);
-    font-size: 20px;
-    font-style: italic;
-    opacity: 0.8;
-}
-
-.card img {
-    width: 100%;
-    display: block;
-    padding: 10px 30px 30px;
-    border-radius: 40px;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.05));
-}
-
-/* --- CONTACT SECTION --- */
-.contact {
-    padding: 100px 0;
-}
-
-.contact-box {
-    background: var(--white);
-    padding: 60px;
-    border-radius: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-    box-shadow: var(--card-shadow);
-}
-
-.contact-info h2 {
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 15px;
-    color: var(--dark-blue);
-}
-
-.contact-info p {
-    color: var(--text-muted);
-    margin-bottom: 40px;
-}
-
-.form-group input, 
-.form-group textarea {
-    width: 100%;
-    padding: 18px;
+/* --- FOTO PROFIL --- */
+img[src="foto.jpg"] {
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    box-shadow: var(--shadow);
     margin-bottom: 20px;
-    border: 2px solid #edf2f7;
-    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+img[src="foto.jpg"]:hover {
+    transform: scale(1.05);
+}
+
+/* --- IDENTITAS --- */
+h2 {
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+/* --- SECTION CARD --- */
+section {
+    background: var(--white);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+/* --- LIST --- */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #f1f5f9;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: "✦";
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* --- TABEL DATA --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: none;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 15px;
+    text-align: left;
+}
+
+table td {
+    padding: 15px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+}
+
+/* --- FORM KONTAK --- */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    margin-bottom: 15px;
     outline: none;
-    font-size: 15px;
-    transition: var(--transition);
+    transition: 0.3s;
 }
 
-.form-group input:focus, 
-.form-group textarea:focus {
-    border-color: #667eea;
-    background: #fff;
+input:focus {
+    border-color: var(--primary-color);
 }
 
-.btn-send {
-    background: var(--primary-gradient);
+button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     border: none;
-    padding: 18px;
-    border-radius: 16px;
+    padding: 15px;
+    border-radius: 10px;
     font-weight: 700;
-    font-size: 16px;
     cursor: pointer;
-    width: 100%;
-    box-shadow: 0 10px 15px -3px rgba(118, 75, 162, 0.3);
-    transition: var(--transition);
+    transition: 0.3s;
 }
 
-.btn-send:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 20px 25px -5px rgba(118, 75, 162, 0.4);
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
 }
 
-.wa-section {
-    text-align: center;
-    padding: 40px;
-    background: #f0fff4;
-    border-radius: 30px;
-    border: 1px dashed #68d391;
-}
-
-.wa-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: #25d366;
-    color: white;
-    text-decoration: none;
-    padding: 18px 40px;
-    border-radius: 50px;
-    font-weight: 700;
-    transition: var(--transition);
-}
-
-.wa-btn:hover {
-    transform: scale(1.05) rotate(-1deg);
-    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
-}
-
-/* --- FOOTER --- */
-.footer {
-    padding: 80px 0 40px;
+/* --- FOOTER & GIF --- */
+footer {
+    margin-top: 50px;
     text-align: center;
 }
 
-.footer p {
-    color: var(--text-muted);
-    font-size: 15px;
-    font-weight: 500;
+footer img {
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
-/* --- RESPONSIVE --- */
-@media (max-width: 850px) {
-    .contact-box {
-        grid-template-columns: 1fr;
-        padding: 40px 30px;
-        gap: 40px;
-    }
-    .hero h1 {
-        font-size: 40px;
-    }
-    .navbar {
-        display: none;
-    }
+footer img:hover {
+    opacity: 1;
+}
+
+/* Terimakasih Text */
+section:last-of-type {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    padding: 0;
+}
+
+section:last-of-type p {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    h1 { font-size: 2rem; }
+    section { padding: 20px; }
 }
